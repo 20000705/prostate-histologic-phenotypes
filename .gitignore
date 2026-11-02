@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+
+# Operating system
+.DS_Store
+
+# Whole-slide images and medical imaging
+*.svs
+*.ndpi
+*.mrxs
+*.tiff
+*.tif
+*.nii
+*.nii.gz
+*.dcm
+
+# Large arrays and embeddings
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+
+# Explicitly retain the frozen PCA model
+!frozen_parameters/
+!frozen_parameters/global_pca_model.npz
+
+# Local datasets and generated outputs
+data/
+datasets/
+outputs/
+results/
+logs/
+checkpoints/
+cache/
+
+# Logs
+*.log
+
+# Sensitive configuration
+.env
+.env.*
